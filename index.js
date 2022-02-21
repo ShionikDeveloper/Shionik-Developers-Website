@@ -11,6 +11,9 @@ app.use(express.static(staticPath))
 app.get("/", (req, res)=>{
     res.send("Home Page")
 })
+app.get("/services", (req, res)=>{
+    res.send("Services page")
+})
 
 
 app.listen(port, ()=>{
