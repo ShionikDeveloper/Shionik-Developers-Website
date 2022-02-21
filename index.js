@@ -1,13 +1,18 @@
-const { application } = require('express')
 const express = require('express')
+require("dotenv").config()
 const app = express()
-
-const port = process.env.PORT || 3000
+let port = process.env.PORT || 3000
 
 //Middleware
+const path = require('path')
+const staticPath = path.join(__dirname, './public')
+app.use(express.static(staticPath))
 
-app.get('/', (req, res)=>{
-    res.sendfile('./public/index.html')
+app.get("/", (req, res)=>{
+    res.send("Home Page")
 })
 
-app.listen(port)
+
+app.listen(port, ()=>{
+    console.log(`http://localhost:${port}`)
+})
