@@ -179,7 +179,9 @@ a{
 }
 
 @media(max-width: 1000px){
-
+    .links{
+        display: none;
+    }
     .main{
         height: 70vh;
     }
