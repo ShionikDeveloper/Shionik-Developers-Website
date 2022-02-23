@@ -1,7 +1,7 @@
 const express = require('express')
 require("dotenv").config()
 const app = express()
-let port = process.env.PORT || 3000
+let port = process.env.PORT || 3001
 
 //Middleware
 const path = require('path')

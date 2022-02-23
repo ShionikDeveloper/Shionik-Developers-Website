@@ -7,6 +7,7 @@ body, *{
 /* Navigation Bar */
 .navbar{
     /* margin: 1rem; */
+    width: 100vw;
     height: 10vh;
     background-color: rgb(255, 104, 104);
     display: flex;
@@ -44,6 +45,7 @@ a{
 .main{
     background: url("https://www.mobindustry.net/wp-content/uploads/2021/03/main_page_bg-min.jpg)");
     height: 50vh;
+    width: 100vw;
     color: white;
     background-position: center;
     background-size: cover;
@@ -73,11 +75,13 @@ a{
 }
 
 .title-desc{
+    width: 100vw;
     margin-top: 2rem;
     text-align: center;
     font-size: 40px;
 }
 .project-desc{
+    width: 100vw;
     min-height: 150vh;
     display: flex;
     flex-direction: column;
@@ -86,6 +90,8 @@ a{
     margin-top: 2rem;
 }
 .projects{
+    margin-top: 1rem;
+    border: 1px solid black;
     display: flex;
     align-items: center;
     min-height: 40vh;
@@ -109,6 +115,7 @@ a{
 }
 /* OUR TECHNOLOGIES */
 .tech-expertise{
+    width: 100vw;
     min-height: 120vh;
     display: flex;
     flex-direction: column;
@@ -132,17 +139,21 @@ a{
     justify-content: space-around;
 }
 .mobile-tech > div{
+    margin: 1rem;
     height: 200px;
     width: 200px;
     background-size: cover;
 
 }
 .web-tech > div{
+    margin: 1rem;
     height: 200px;
     width: 200px;
     background-size: cover;
+    background-color: red;
 }
 .web-framework > div{
+    margin: 1rem;
     height: 200px;
     width: 200px;
     background-size: cover;
@@ -167,13 +178,51 @@ a{
     line-height: 1.5rem;
 }
 
-/* @media(max-width: 1000px){
-    .projects{
+@media(max-width: 1000px){
+
+    .main{
+        height: 70vh;
+    }
+    .title-head{
+        margin-top: 8rem;
+    }
+    .project-desc{
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: space-around;
+    }
+    .description{
+        width: 50vw;
+    }
+    .projects{
+        display: flex;
         flex-direction: column;
     }
-} */
+    .proj-2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .picture{
+        margin-top: 1rem;
+        width: 80vw;
+    }
+    
+}
+@media(max-width: 750px){
+    .projects{
+        width: 100vw;
+        /* height: 120vh; */
+    }
+    .description{
+        text-align: center;
+        width: 100vw;
+    }
+    .mobile-tech > div, .web-tech > div, .web-framework > div{
+        width: 120px;
+        height: 120px;
+    }
+
+}
 
 
