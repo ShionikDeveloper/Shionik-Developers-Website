@@ -1,231 +1,88 @@
 body, *{
+    padding: 0;
+    margin: 0;
     font-family: 'Roboto', sans-serif;
-    padding: 0%;
-    margin: auto;
-
+    font-style: initial;
 }
-
-/* Navigation Bar */
-.navbar{
-    /* margin: 1rem; */
-    width: 100vw;
-    height: 10vh;
-    background-color: rgb(255, 104, 104);
+header{
+    background-image: url("https://www.mobindustry.net/wp-content/uploads/2021/03/main_page_bg-min.jpg");
+    height: 60vh;
+    justify-content: space-around;
+    position: sticky;
+    background-size: cover;
+    
+}
+.nav{
     display: flex;
     align-items: center;
+    /* justify-content: space-around; */
+}
+.nav div{
+    margin-top: 1rem;
+}
+
+.nav-container{
+    margin-left: 5rem;
+    position: sticky;
+    /* max-width: 50vw; */
+    height: 3rem;
+    display: flex;
     justify-content: space-around;
-    color: white;
+    max-width: 30v;
 }
 .logo{
-    font-size: 35px;
-    background-color: rgb(255, 123, 123);
+    margin-top: 1rem;
+    width: 5rem;
+    height: 3rem;
+    background-color: white;
 }
-.links{
-    /* background-color: aqua; */
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-left: 3rem;
-    width: 30rem;
-    height: 5vh;
-    
-}
-.navlinks{
-    height: 3vh;
-    width: 4rem;
-    /* background-color: black; */
+.navLink{
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    font-weight: 800;
+    font-style: initial;
+    cursor: pointer;
 }
-a{
-    color: white;
-    text-decoration: none;
+.navLink:hover{
+    color: rgb(226, 117, 117);
+    transition: 0.5s ease;
 }
-.main{
-    background: url("https://www.mobindustry.net/wp-content/uploads/2021/03/main_page_bg-min.jpg)");
-    height: 50vh;
-    width: 100vw;
+.bar{
     color: white;
-    background-position: center;
-    background-size: cover;
+    font-size: 1.5rem;
+    display: none;
+}
 
-}
-.heading{
-    position: absolute;
+/* Heading Section */
+.heading-section{
+    display: flex;
+    flex-direction: column;
 }
 .title-head{
-    margin-top: 5rem;
-    margin-left: 3rem;
-    max-width: 600px;
-    font-size: 40px;
-    font-weight: bold;
-}
-.target{
-    margin-left: 3rem;
-    margin-top: 2rem;
-    max-width: 600px;
-    font-size: 20px;
-}
-.company-desc{
-    margin-top: 2rem;
-    margin-left: 3rem;
-    max-width: 600px;
-    font-size: 18px ;
-}
-
-.title-desc{
-    width: 100vw;
-    margin-top: 2rem;
-    text-align: center;
-    font-size: 40px;
-}
-.project-desc{
-    width: 100vw;
-    min-height: 150vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 2rem;
-}
-.projects{
-    margin-top: 1rem;
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    min-height: 40vh;
-    width: 60vw;
-    /* background-color: rgb(255, 123, 123); */
-}
-.picture{
-    object-fit: cover;
-    width: 35vw;
-    max-width: 100%;
-    height: 40vh;
-    background-position: center;
-    background-size: cover;
-}
-
-.description{
-    width: 25vw;
-    height: 40vh;
-    font-size: 2rem;
-    /* background-color: aqua; */
-}
-/* OUR TECHNOLOGIES */
-.tech-expertise{
-    width: 100vw;
-    min-height: 120vh;
-    display: flex;
-    flex-direction: column;
-}
-.mobile-tech{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-}
-.web-tech{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-}
-.web-framework{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-}
-.mobile-tech > div{
-    margin: 1rem;
-    height: 200px;
-    width: 200px;
-    background-size: cover;
-
-}
-.web-tech > div{
-    margin: 1rem;
-    height: 200px;
-    width: 200px;
-    background-size: cover;
-    background-color: red;
-}
-.web-framework > div{
-    margin: 1rem;
-    height: 200px;
-    width: 200px;
-    background-size: cover;
-    /* background-position: center; */
-}
-
-/* FOOTER */
-.footer{
-    /* position: absolute; */
-    display: flex;
-    font-size: 1.2rem;
-    align-items: center; 
-    justify-content: space-around;
-    min-height: 20vh;
-    width: 100vw;
-    background-color: rgb(255, 104, 104);
     color: white;
-    font-weight: 800;
+    font-size: 1.2rem;
+    margin-top: 4rem;
+    line-height: 3.0rem;
 }
-.service{
-    cursor: pointer;
-    line-height: 1.5rem;
+.logo, .title-head{
+    margin-left: 4rem;
 }
 
-@media(max-width: 1000px){
-    .links{
+/* Nav View Mobile display none */
+.nav-container-mobile{
+    display: none;
+}
+
+@media(max-width: 750px){
+    .bar{
+        margin-left: 50vw;
+        display: block;
+    }
+    .logo, .title-head{
+        margin-left: 5rem;
+    }
+    .navLink{
         display: none;
     }
-    .main{
-        height: 70vh;
-    }
-    .title-head{
-        margin-top: 8rem;
-    }
-    .project-desc{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .description{
-        width: 50vw;
-    }
-    .projects{
-        display: flex;
-        flex-direction: column;
-    }
-    .proj-2{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .picture{
-        margin-top: 1rem;
-        width: 80vw;
-    }
-    
 }
-@media(max-width: 750px){
-    .projects{
-        width: 100vw;
-        /* height: 120vh; */
-    }
-    .description{
-        text-align: center;
-        width: 100vw;
-    }
-    .mobile-tech > div, .web-tech > div, .web-framework > div{
-        width: 120px;
-        height: 120px;
-    }
-
-}
-
-
