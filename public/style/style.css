@@ -146,7 +146,7 @@ header{
     justify-content: space-around;
 }
 .our-services{
-    margin: 5rem;
+    margin: 3rem;
 }
 .our-services > h1{
     text-align: center;
@@ -163,12 +163,11 @@ header{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    /* background-color: rgb(218, 216, 216); */
     margin: 1rem;
 }
 .service{
     width: 300px;
-    height: 200px;
+    /* height: 200px; */
     /* background-color: antiquewhite; */
     /* margin-top: 2rem; */
     margin: 1rem;
@@ -186,11 +185,30 @@ header{
     text-align: left;
     font-size: 1.5rem;
 }
+footer{
+    margin-top: 4rem;
+    height: 10rem;
+    background-color: rgb(226, 117, 117);
+
+}
+
+@media(max-width: 1000px){
+    .navLink{
+        display: none;
+    }
+    .bar{
+        display: block;
+        margin-left: 400px;
+    }
+    header{
+        height: 100vh;
+    }
+}
 
 
 @media(max-width: 750px){
     .bar{
-        margin-left: 100px;
+        margin-left: 40vw;
         display: block;
     }
     .logo, .title-head{
@@ -202,4 +220,47 @@ header{
     header{
         height: 100vh;
     }
+    .logo, .title-head, .target-heading, .work-description, .btn{
+        margin-left: 0rem;
+    }
+    .title-head{
+        font-size: 0.8rem;
+        line-height: 1.2;
+    }
+    .target-heading{
+        font-size: 0.8rem;
+    }
+    .work-description{
+        font-size: 0.8rem;
+    }
+    .btn{
+        margin-top: 2rem;
+    }
+    .our-services h1{
+        font-size: 1rem;
+    }
+    .our-services p{
+        font-size: 0.8rem;
+    }
+    .services-provided{
+        width: 100%;
+    }
+    .tech-stack h1{
+        font-size: 1rem;
+    }
+    .technologies h1{
+        font-size: 0.6rem;
+    }
+    
+}
+@media (max-width: 320px) {
+    .bar{
+        margin-left: 0;
+    }
+    .logo, .title-head, .target-heading, .work-description, .btn{
+        margin-left: 0.5rem;
+    }
+    
+    
+    
 }
