@@ -31,10 +31,15 @@ header{
     max-width: 30v;
 }
 .logo{
+    font-style: italic;
     margin-top: 1rem;
-    width: 5rem;
+    /* width: 5rem; */
     height: 3rem;
     background-color: white;
+    border-radius: 20px;
+}
+.logo-text{
+    font-style: italic;
 }
 .navLink{
     color: white;
@@ -65,7 +70,7 @@ header{
     margin-top: 4rem;
     line-height: 3.0rem;
 }
-.logo, .title-head{
+.logo, .title-head, .target-heading, .work-description, .btn{
     margin-left: 4rem;
 }
 
@@ -73,10 +78,119 @@ header{
 .nav-container-mobile{
     display: none;
 }
+.target-heading{
+    color: white;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+.work-description{
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+.btn{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    color: white;
+    width: 7rem;
+    height: 2rem;
+    border: 3px solid rgb(226, 117, 117);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(226, 117, 117);
+}
+.tech-stack{
+    display: flex;
+    flex-direction: column;
+}
+.tech-stack h1{
+    text-align: center;
+}
+.technologies h1{
+    margin-top: 4rem;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+.web-tech{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.language{
+    background-position: center;
+    background-size: cover;
+    /* width: 15rem;
+    height: 15rem; */
+    margin: 2rem;
+    cursor: pointer;
+}
+.language img{
+    height: 5rem;
+    width: 5rem;
+}
+.language img:hover{
+    box-shadow: 3px 3px 3px black;
+    transition: 0.4s ease;
+}
+.frameworks{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.our-services{
+    margin: 5rem;
+}
+.our-services > h1{
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+.our-services > p{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.services-provided{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: rgb(218, 216, 216); */
+    margin: 1rem;
+}
+.service{
+    width: 300px;
+    height: 200px;
+    /* background-color: antiquewhite; */
+    /* margin-top: 2rem; */
+    margin: 1rem;
+    box-shadow: 2px 2px 2px rgb(197, 196, 196);
+}
+.service:hover{
+    border-left: 3px solid rgb(226, 117, 117);
+    box-shadow: 3px 3px 3px rgb(197, 196, 196);
+}
+.service h2{
+    text-align: left;
+    color: rgb(226, 117, 117);
+}
+.service p{
+    text-align: left;
+    font-size: 1.5rem;
+}
+
 
 @media(max-width: 750px){
     .bar{
-        margin-left: 50vw;
+        margin-left: 100px;
         display: block;
     }
     .logo, .title-head{
@@ -84,5 +198,8 @@ header{
     }
     .navLink{
         display: none;
+    }
+    header{
+        height: 100vh;
     }
 }
